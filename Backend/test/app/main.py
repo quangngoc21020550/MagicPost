@@ -3,7 +3,7 @@ import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 # from route import router as api_router
-from Backend.test.app.api.routes.product import router as product_router
+from app.api.routes.product import router as product_router
 
 app = FastAPI()
 

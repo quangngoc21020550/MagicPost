@@ -1,7 +1,7 @@
 import pymongo
 
-from Backend.backend_config import MONGO_DB_URL
-from Backend.test.app.config import MONGO_DB_NAME
+
+from app.config import MONGO_DB_NAME, MONGO_DB_URL
 
 print(MONGO_DB_NAME)
 print(MONGO_DB_URL)

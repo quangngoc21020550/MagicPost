@@ -8,7 +8,7 @@ from typing import List
 # from app.core.utilscm import  authrequire
 # from app.core.utilscm.authrequire import get_current_user
 # from app.callcache import dict_cache
-from Backend.test.app.models.product import product, productdb
+from app.models.product import product, productdb
 
 
 router = APIRouter()

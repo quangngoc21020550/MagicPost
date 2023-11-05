@@ -18,7 +18,7 @@ from pydantic import BaseModel, HttpUrl,Field,AnyUrl
 from uuid import UUID
 from typing import List,Dict
 from pydantic import IPvAnyAddress
-from Backend.test.app.models.modelbase import modelBase
+from app.models.modelbase import modelBase
 
 
 class productModel(BaseModel):
