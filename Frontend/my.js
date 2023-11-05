@@ -1,19 +1,19 @@
-const options = {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-        "product": {
-          "name": "siuuu",
-          "price": 0
-        }
-      })
-};
-
 const SERVER = "http://127.0.0.1:8000"
 var apiPath = "/test/product/insert"
 
 function insertProd() {
-    fetch(SERVER + apiPath, options).then((res) => res.text()).then(data => 
+    const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            "product": {
+              "name": "alo",
+              "price": 12
+            }
+          })
+    };
+
+    fetch(SERVER + "/test/product/insert", options).then((res) => res.text()).then(data => 
         document.getElementById('insprod').innerHTML=data);
 }
 
